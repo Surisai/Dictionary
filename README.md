@@ -18,21 +18,24 @@ Global Variables, Functions, and Types
 
 All global variables, functions, operators, and types should be encapsulated within the seneca namespace.
 
-Modules Overview
+#Modules Overview
 
-tester_1 Module (Provided):
+tester_1 Module :
 
-This module should not be modified! Study and understand its code to grasp the expected behavior.
-settings Module:
+This module should not be modified!Understand its code to grasp the expected behavior.
+
+Settings Module:
 
 This module handles the application configuration.
-Create a Settings structure that contains public data members and no member functions. Declare a global variable g_settings of this type in the header and define it in the implementation file.
+Create a Settings structure that contains public data members and no member functions. 
+Declare a global variable g_settings of this type in the header and define it in the implementation file.
 Public Members:
 
 m_show_all: A boolean flag. If true, the application will display all definitions for a word; otherwise, only the first definition will be shown (default: false).
 m_verbose: A boolean flag. If true, the application will display the part of speech for a word (default: false).
 m_time_units: A string attribute that stores the time units to be used when displaying operation durations. Possible values include seconds, milliseconds, microseconds, or nanoseconds (default: nanoseconds).
-event Module:
+
+Event Module:
 
 The Event class stores information about a single event during the program’s execution. It should store the event name (as a string) and its duration (as a std::chrono::nanoseconds object).
 Public Members:
@@ -50,7 +53,9 @@ COUNTER is a right-aligned field of size 2, representing the number of times thi
 EVENT_NAME is the right-aligned event name with a width of 40 characters.
 DURATION is a right-aligned field representing the event's duration.
 TIME_UNITS is the string representing the chosen time units.
-logger Module:
+
+
+Logger Module:
 
 The Logger class manages a dynamically allocated collection of events, stored as an array.
 Public Members:
@@ -67,7 +72,7 @@ Copy
 EVENT
 EVENT
 ...
-timeMonitor Module:
+TimeMonitor Module:
 
 The TimeMonitor class helps measure the duration of various operations or events using the chrono library.
 Public Members:
