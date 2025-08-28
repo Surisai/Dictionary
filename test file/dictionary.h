@@ -1,4 +1,4 @@
-f SENECA_DICTIONARY_H
+#ifndef SENECA_DICTIONARY_H
 #define SENECA_DICTIONARY_H
 
 #include <string>
